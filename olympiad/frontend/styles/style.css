@@ -16,7 +16,19 @@ header.header {
     width: 97px;
     height: 73px;
 }
-
+.header .header-button {
+    background-color: #5B98E3;
+    border-radius: 9px;
+    padding: 20px 64px;
+    border: none !important;
+}
+.header .header-button:hover{
+    background-color: #4d82c4 !important;
+}
+.header .header-button:active{
+    background-color: rgb(63, 108, 163) !important;
+    
+}
 .header-titles {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -54,4 +66,16 @@ header.header {
 }
 .organizers-segment {
     margin: 0.75rem;
+}
+.description {
+    padding: 70px 0;
+    color: #2A30B1;
+    font-size: 20px;
+    line-height: 150%;
+}
+.description .description-title {
+    font-size: 30px;
+}
+.description p {
+    margin-bottom: 40px;
 }
