@@ -11,6 +11,7 @@ header.header {
     background-position: center;
     background-image: url("../images/background.svg")
 }
+
 .header-logo {
     width: 97px;
     height: 73px;
@@ -26,8 +27,31 @@ header.header {
 .header-text {
     font-weight: 900;
     color: white;
-    font-size: 46;
+    font-size: 42px;
 }
+
 .header-managers {
     max-width: 90vw;
+}
+
+.organizers {
+    color: white;
+    background: linear-gradient(89.95deg, #211EAA 0.04%, #3648B9 99.96%);
+}
+.organizers > .container > .container {
+    margin: -0.75rem;
+    padding: 0 !important;
+}
+.organizers ul {
+    margin: -0.75rem;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.organizers li {
+    margin: 0.75rem;
+    flex: 1 1 auto !important;
+    list-style-type: none;
+}
+.organizers-segment {
+    margin: 0.75rem;
 }
