@@ -185,7 +185,9 @@
     border-radius: 10px;
     margin-bottom: 13px;
 }
-.persona-image::before, .persona-image::after {
+
+.persona-image::before,
+.persona-image::after {
     display: block;
     z-index: 9;
     top: 19px;
@@ -197,18 +199,22 @@
     background-color: #E9EEFF;
     border-radius: 100px;
 }
+
 .persona-image::after {
     top: 51px;
     left: 39px;
 }
+
 .persona:nth-child(even) .persona-image::after {
     top: 51px;
     left: -23px;
 }
+
 .persona:nth-child(even) .persona-image::before {
     top: 19px;
     left: 39px;
 }
+
 .persona-title {
     font-weight: 700;
     font-size: 20px;
@@ -221,6 +227,7 @@
     line-height: 150%;
     max-width: 254px;
 }
+
 .gallery-thumbnail {
     background-repeat: no-repeat;
     background-position: center;
@@ -249,8 +256,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .gallery-popup div:before {
+}
+
+.gallery-popup div:before {
     content: '';
     position: fixed;
     top: 0;
@@ -260,8 +268,9 @@
     z-index: 74;
     background-color: rgba(0, 0, 0, 0);
     transition: all 0.5s ease-out;
-  }
-  .gallery-popup div img {
+}
+
+.gallery-popup div img {
     position: relative;
     z-index: 77;
     max-width: 100%;
@@ -271,10 +280,69 @@
     transition-property: all, opacity;
     transition-duration: 0.5s, 0.2s;
     transition-timing-function: ease-in-out, ease-out;
-  }
-  .gallery-popup div:target { visibility: visible; }
-  .gallery-popup div:target:before { background-color: rgba(0, 0, 0, 0.7); }
-  .gallery-popup div:target img {
+}
+
+.gallery-popup div:target {
+    visibility: visible;
+}
+
+.gallery-popup div:target:before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-popup div:target img {
     margin-left: 0px;
     opacity: 1;
-  }
+}
+
+.map {
+    width: 100%;
+    height: 560px
+}
+
+
+.contacts-organization, .contacts-place, .contacts-room {
+    line-height: 150%;
+    max-width: 600px;
+}
+
+.contacts-place {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+.contacts-organization {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.contacts-room {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.contacts-phone {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.contacts-mail {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+.contacts-address{
+    height: 248px;
+    background-color: #4340C9;
+}
+.contacts-remote {
+    height: 248px;
+    background-color: #0A72ED;
+}
+.contacts a {
+    text-decoration: none;
+    color: white;
+}
