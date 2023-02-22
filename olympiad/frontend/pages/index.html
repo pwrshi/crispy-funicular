@@ -15,19 +15,27 @@
 <body>
     <section class="header container-fluid pt-5 pb-3 d-flex align-items-stretch">
         <div class="container d-flex flex-column justify-content-between">
-            <img class="header-logo d-block" src="../images/logo1x.png" srcset="../images/logo2x.png 2x"
-                srcset="../images/logo4x.png 4x">
+            <picture class="header__logo">
+                <source srcset="../images/logo.png?as=avif&width=194" type="image/avif" />
+                <source srcset="../images/logo.png?as=webp&width=194" type="image/webp" />
+                <source srcset="../images/logo.png?width=194" type="image/png" />
+                <img src="../images/logo.png?width=97" alt="РГЭУ РИНХ" />
+            </picture>
             <div class="d-flex flex-wrap justify-content-center align-items-center">
                 <div class="py-5 d-grid gap-2 col-sm-12 col-lg-5 mt-5">
-                    <h1 class="mb-5 header-text">Международная<br>научно-практическая<br>онлайн-олимпиада</h1>
-                    <button class="header-button btn col-sm-12 col-lg-7 btn-primary btn-lg">Принять участие</button>
+                    <h1 class="mb-5 header__title">Международная<br>научно-практическая<br>онлайн-олимпиада</h1>
+                    <a class="header__button btn col-sm-12 col-lg-7 btn-primary btn-lg" href="register.html">Принять
+                        участие</a>
                 </div>
-
-                <img class="header-managers col-sm-12 col-lg-6" src="../images/managers1x.png"
-                    srcset="../images/managers2x.png 2x" srcset="../images/managers4x.png 4x">
+                <picture class="header__landing-image col-sm-12 col-lg-6">
+                    <source srcset="../images/managers.png?as=avif&width=1200" type="image/avif" />
+                    <source srcset="../images/managers.png?as=webp&width=1200" type="image/webp" />
+                    <source srcset="../images/managers.png?width=1200" type="image/png" />
+                    <img src="../images/managers.png?width=659">
+                </picture>
 
             </div>
-            <div class="d-flex flex-wrap justify-content-between header-place mt-5">
+            <div class="d-flex flex-wrap justify-content-between header__venue mt-5">
                 <h6 class="fw-bold text-white">Место проведения онлайн-олимпиады:</h6>
                 <p class="fw-light text-white">Ростовский государственный экономический университет (РИНХ), Точка
                     кипения РГЭУ
@@ -38,8 +46,8 @@
     </section>
     <section class="organizers py-5">
         <div class="container">
-            <div class="container d-flex flex-wrap">
-                <div class="organizers-segment d-flex flex-column">
+            <div class="container organizers__wrapper d-flex flex-wrap">
+                <div class="organizers__segment d-flex flex-column">
                     <h2 class="my-3">Соорганизаторы:</h2>
                     <ul class="d-flex flex-wrap justify-content-center">
                         <li>Ростовский<br>государственный<br>экономический<br>университет (РИНХ)</li>
@@ -50,7 +58,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="organizers-segment d-flex flex-column">
+                <div class="organizers__segment d-flex flex-column">
                     <h2 class="my-3">при поддержке</h2>
                     <ul class="d-flex flex-wrap justify-content-center">
                         <li>Аппарата<br>полномочного<br>представителя<br>Президента РФ в<br>Южном
@@ -64,7 +72,7 @@
     </section>
     <section class="description">
         <div class="container">
-            <p class="col-12 description-title">Олимпиада включает два этапа, проводимые в заочной форме с
+            <p class="col-12 description__title">Олимпиада включает два этапа, проводимые в заочной форме с
                 применением дистанционных
                 образовательных технологий:</p>
             <div class="row">
@@ -91,43 +99,43 @@
         <div class="container mb-5 d-flex justify-content-center flex-wrap">
             <h2 class="title text-center w-100">Цели</h2>
             <input type="radio" id="tab1" name="tabbar" class="d-none" checked>
-            <label for="tab1" class="p-2 targets-tab">Творческие способности</label>
+            <label for="tab1" class="p-2 tab">Творческие способности</label>
             <input type="radio" id="tab2" name="tabbar" class="d-none">
-            <label for="tab2" class="p-2 targets-tab">Одаренные дети</label>
+            <label for="tab2" class="p-2 tab">Одаренные дети</label>
             <input type="radio" id="tab3" name="tabbar" class="d-none">
-            <label for="tab3" class="p-2 targets-tab">Научные знания</label>
+            <label for="tab3" class="p-2 tab">Научные знания</label>
             <input type="radio" id="tab4" name="tabbar" class="d-none">
-            <label for="tab4" class="p-2 targets-tab">Профессиональная ориентация</label>
+            <label for="tab4" class="p-2 tab">Профессиональная ориентация</label>
             <input type="radio" id="tab5" name="tabbar" class="d-none">
-            <label for="tab5" class="p-2 targets-tab">Талантливая молодеж</label>
-            <div class="targets-content position-relative w-100">
-                <div class="targets-card" id="content1">
-                    <h3 class="targets-subtitle">Творческие способности</h3>
-                    <p class="targets-paragraph">Выявление и развитие у учащихся, осваивающих общеобразовательные
+            <label for="tab5" class="p-2 tab">Талантливая молодеж</label>
+            <div class="targets__content position-relative w-100">
+                <div class="idea" id="content1">
+                    <h3 class="idea__title">Творческие способности</h3>
+                    <p class="idea__text">Выявление и развитие у учащихся, осваивающих общеобразовательные
                         программы основного общего и среднего общего образования, творческих способностей и интереса
                         к научно-исследовательской деятельности</p>
                 </div>
-                <div class="targets-card" id="content2">
-                    <h3 class="targets-subtitle">Одаренные дети</h3>
-                    <p class="targets-paragraph">Выявление и развитие у учащихся, осваивающих общеобразовательные
+                <div class="idea" id="content2">
+                    <h3 class="idea__title">Одаренные дети</h3>
+                    <p class="idea__text">Выявление и развитие у учащихся, осваивающих общеобразовательные
                         программы основного общего и среднего общего образования, творческих способностей и интереса
                         к научно-исследовательской деятельности</p>
                 </div>
-                <div class="targets-card" id="content3">
-                    <h3 class="targets-subtitle">Научные знания</h3>
-                    <p class="targets-paragraph">Выявление и развитие у учащихся, осваивающих общеобразовательные
+                <div class="idea" id="content3">
+                    <h3 class="idea__title">Научные знания</h3>
+                    <p class="idea__text">Выявление и развитие у учащихся, осваивающих общеобразовательные
                         программы основного общего и среднего общего образования, творческих способностей и интереса
                         к научно-исследовательской деятельности</p>
                 </div>
-                <div class="targets-card" id="content4">
-                    <h3 class="targets-subtitle">Профессиональная ориентация</h3>
-                    <p class="targets-paragraph">Выявление и развитие у учащихся, осваивающих общеобразовательные
+                <div class="idea" id="content4">
+                    <h3 class="idea__title">Профессиональная ориентация</h3>
+                    <p class="idea__text">Выявление и развитие у учащихся, осваивающих общеобразовательные
                         программы основного общего и среднего общего образования, творческих способностей и интереса
                         к научно-исследовательской деятельности</p>
                 </div>
-                <div class="targets-card" id="content5">
-                    <h3 class="targets-subtitle">Талантливая молодеж</h3>
-                    <p class="targets-paragraph">Выявление и развитие у учащихся, осваивающих общеобразовательные
+                <div class="idea" id="content5">
+                    <h3 class="idea__title">Талантливая молодеж</h3>
+                    <p class="idea__text">Выявление и развитие у учащихся, осваивающих общеобразовательные
                         программы основного общего и среднего общего образования, творческих способностей и интереса
                         к научно-исследовательской деятельности</p>
                 </div>
@@ -139,66 +147,112 @@
         <div class="container mb-5">
             <h2 class="title text-center w-100">Программный комитет олимпиады</h2>
             <div class="d-flex flex-wrap">
-                <div class="persona">
-                    <div class="persona-image"><img src="../images/vasiliy/1x.jpg" srcset="../images/vasiliy/2x.jpg 2x"
-                            srcset="../images/vasiliy/4x.jpg 4x" class="persona-image" alt="Боев Василий Юрьевич"></div>
-                    <h3 class="persona-title">Боев Василий Юрьевич</h3>
-                    <p class="persona-description">проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой
+                <div class="employee">
+                    <div class="employee__avatar">
+                        <picture class="employee__avatar">
+                            <source srcset="../images/v.jpg?as=avif&width=226" type="image/avif" />
+                            <source srcset="../images/v.jpg?as=webp&width=226" type="image/webp" />
+                            <source srcset="../images/v.jpg?as=jpeg&width=226" type="image/jpeg" />
+                            <img src="../images/v.jpg?width=113" alt="Боев Василий Юрьевич" />
+                        </picture>
+                    </div>
+                    <h3 class="employee__name">Боев Василий Юрьевич</h3>
+                    <p class="employee__position">проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой
                         экономики региона, отраслей и предприятий РГЭУ (РИНХ), к.э.н., доцент.</p>
                 </div>
-                <div class="persona">
-                    <div class="persona-image"><img srrc="../images/ludmila/1x.jpg" srcset="../images/ludmila/2x.jpg 2x"
-                            srcset="../images/ludmila/4x.jpg 4x" class="persona-image"
-                            alt="Жебровская Людмила Анатольевна"></div>
-                    <h3 class="persona-title">Жебровская Людмила Анатольевна</h3>
-                    <p class="persona-description">начальник Управления компьютеризации учебной и административной
+                <div class="employee">
+                    <div class="employee__avatar">
+                        <picture class="employee__avatar">
+                            <source srcset="../images/l.jpg?as=avif&width=226" type="image/avif" />
+                            <source srcset="../images/l.jpg?as=webp&width=226" type="image/webp" />
+                            <source srcset="../images/l.jpg?as=jpeg&width=226" type="image/jpeg" />
+                            <img src="../images/l.jpg?width=113" alt="Жебровская Людмила Анатольевна" />
+                        </picture>
+                    </div>
+                    <h3 class="employee__name">Жебровская Людмила Анатольевна</h3>
+                    <p class="employee__position">начальник Управления компьютеризации учебной и административной
                         деятельности РГЭУ (РИНХ), к.э.н., доцент</p>
                 </div>
-                <div class="persona">
-                    <div class="persona-image"><img srrc="../images/ludmila/1x.jpg" srcset="../images/ludmila/2x.jpg 2x"
-                            srcset="../images/ludmila/4x.jpg 4x" class="persona-image"
-                            alt="Жебровская Людмила Анатольевна"></div>
-                    <h3 class="persona-title">Жебровская Людмила Анатольевна</h3>
-                    <p class="persona-description">начальник Управления компьютеризации учебной и административной
+                <div class="employee">
+                    <div class="employee__avatar">
+                        <picture class="employee__avatar">
+                            <source srcset="../images/l.jpg?as=avif&width=226" type="image/avif" />
+                            <source srcset="../images/l.jpg?as=webp&width=226" type="image/webp" />
+                            <source srcset="../images/l.jpg?as=jpeg&width=226" type="image/jpeg" />
+                            <img src="../images/l.jpg?width=113" alt="Жебровская Людмила Анатольевна" />
+                        </picture>
+                    </div>
+                    <h3 class="employee__name">Жебровская Людмила Анатольевна</h3>
+                    <p class="employee__position">начальник Управления компьютеризации учебной и административной
                         деятельности РГЭУ (РИНХ), к.э.н., доцент</p>
                 </div>
-                <div class="persona">
-                    <div class="persona-image"><img src="../images/vasiliy/1x.jpg" srcset="../images/vasiliy/2x.jpg 2x"
-                            srcset="../images/vasiliy/4x.jpg 4x" class="persona-image" alt="Боев Василий Юрьевич"></div>
-                    <h3 class="persona-title">Боев Василий Юрьевич</h3>
-                    <p class="persona-description">проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой
+
+                <div class="employee">
+                    <div class="employee__avatar">
+                        <picture class="employee__avatar">
+                            <source srcset="../images/v.jpg?as=avif&width=226" type="image/avif" />
+                            <source srcset="../images/v.jpg?as=webp&width=226" type="image/webp" />
+                            <source srcset="../images/v.jpg?as=jpeg&width=226" type="image/jpeg" />
+                            <img src="../images/v.jpg?width=113" alt="Боев Василий Юрьевич" />
+                        </picture>
+                    </div>
+                    <h3 class="employee__name">Боев Василий Юрьевич</h3>
+                    <p class="employee__position">проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой
                         экономики региона, отраслей и предприятий РГЭУ (РИНХ), к.э.н., доцент.</p>
                 </div>
-                <div class="persona">
-                    <div class="persona-image"><img src="../images/vasiliy/1x.jpg" srcset="../images/vasiliy/2x.jpg 2x"
-                            srcset="../images/vasiliy/4x.jpg 4x" class="persona-image" alt="Боев Василий Юрьевич"></div>
-                    <h3 class="persona-title">Боев Василий Юрьевич</h3>
-                    <p class="persona-description">проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой
-                        экономики региона, отраслей и предприятий РГЭУ (РИНХ), к.э.н., доцент.</p>
-                </div>
-                <div class="persona">
-                    <div class="persona-image"><img srrc="../images/ludmila/1x.jpg" srcset="../images/ludmila/2x.jpg 2x"
-                            srcset="../images/ludmila/4x.jpg 4x" class="persona-image"
-                            alt="Жебровская Людмила Анатольевна"></div>
-                    <h3 class="persona-title">Жебровская Людмила Анатольевна</h3>
-                    <p class="persona-description">начальник Управления компьютеризации учебной и административной
+                <div class="employee">
+                    <div class="employee__avatar">
+                        <picture class="employee__avatar">
+                            <source srcset="../images/l.jpg?as=avif&width=226" type="image/avif" />
+                            <source srcset="../images/l.jpg?as=webp&width=226" type="image/webp" />
+                            <source srcset="../images/l.jpg?as=jpeg&width=226" type="image/jpeg" />
+                            <img src="../images/l.jpg?width=113" alt="Жебровская Людмила Анатольевна" />
+                        </picture>
+                    </div>
+                    <h3 class="employee__name">Жебровская Людмила Анатольевна</h3>
+                    <p class="employee__position">начальник Управления компьютеризации учебной и административной
                         деятельности РГЭУ (РИНХ), к.э.н., доцент</p>
                 </div>
-                <div class="persona">
-                    <div class="persona-image"><img srrc="../images/ludmila/1x.jpg" srcset="../images/ludmila/2x.jpg 2x"
-                            srcset="../images/ludmila/4x.jpg 4x" class="persona-image"
-                            alt="Жебровская Людмила Анатольевна"></div>
-                    <h3 class="persona-title">Жебровская Людмила Анатольевна</h3>
-                    <p class="persona-description">начальник Управления компьютеризации учебной и административной
-                        деятельности РГЭУ (РИНХ), к.э.н., доцент</p>
-                </div>
-                <div class="persona">
-                    <div class="persona-image"><img src="../images/vasiliy/1x.jpg" srcset="../images/vasiliy/2x.jpg 2x"
-                            srcset="../images/vasiliy/4x.jpg 4x" class="persona-image" alt="Боев Василий Юрьевич"></div>
-                    <h3 class="persona-title">Боев Василий Юрьевич</h3>
-                    <p class="persona-description">проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой
+                <div class="employee">
+                    <div class="employee__avatar">
+                        <picture class="employee__avatar">
+                            <source srcset="../images/v.jpg?as=avif&width=226" type="image/avif" />
+                            <source srcset="../images/v.jpg?as=webp&width=226" type="image/webp" />
+                            <source srcset="../images/v.jpg?as=jpeg&width=226" type="image/jpeg" />
+                            <img src="../images/v.jpg?width=113" alt="Боев Василий Юрьевич" />
+                        </picture>
+                    </div>
+                    <h3 class="employee__name">Боев Василий Юрьевич</h3>
+                    <p class="employee__position">проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой
                         экономики региона, отраслей и предприятий РГЭУ (РИНХ), к.э.н., доцент.</p>
                 </div>
+                <div class="employee">
+                    <div class="employee__avatar">
+                        <picture class="employee__avatar">
+                            <source srcset="../images/l.jpg?as=avif&width=226" type="image/avif" />
+                            <source srcset="../images/l.jpg?as=webp&width=226" type="image/webp" />
+                            <source srcset="../images/l.jpg?as=jpeg&width=226" type="image/jpeg" />
+                            <img src="../images/l.jpg?width=113" alt="Жебровская Людмила Анатольевна" />
+                        </picture>
+                    </div>
+                    <h3 class="employee__name">Жебровская Людмила Анатольевна</h3>
+                    <p class="employee__position">начальник Управления компьютеризации учебной и административной
+                        деятельности РГЭУ (РИНХ), к.э.н., доцент</p>
+                </div>
+                <div class="employee">
+                    <div class="employee__avatar">
+                        <picture class="employee__avatar">
+                            <source srcset="../images/v.jpg?as=avif&width=226" type="image/avif" />
+                            <source srcset="../images/v.jpg?as=webp&width=226" type="image/webp" />
+                            <source srcset="../images/v.jpg?as=jpeg&width=226" type="image/jpeg" />
+                            <img src="../images/v.jpg?width=113" alt="Боев Василий Юрьевич" />
+                        </picture>
+                    </div>
+                    <h3 class="employee__name">Боев Василий Юрьевич</h3>
+                    <p class="employee__position">проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой
+                        экономики региона, отраслей и предприятий РГЭУ (РИНХ), к.э.н., доцент.</p>
+                </div>
+
 
 
             </div>
@@ -208,49 +262,70 @@
     <section class="gallery" id="#gallery">
         <h2 class="title text-center w-100">Фотогалерея</h2>
         <a href="#gallery" class="gallery-popup">
-            <div id="g1"><img src="../images/gallery/g1-2x.jpg"></div>
-            <div id="g2"><img src="../images/gallery/g2-2x.jpg"></div>
-            <div id="g3"><img src="../images/gallery/g3-2x.jpg"></div>
+            <div id="g1">
+                <picture>
+                    <source srcset="../images/g1.jpg?as=avif&width=1440" type="image/avif" />
+                    <source srcset="../images/g1.jpg?as=webp&width=1440" type="image/webp" />
+                    <source srcset="../images/g1.jpg?as=jpeg&width=1440" type="image/jpeg" />
+                    <img src="../images/g1.jpg?width=1440" alt="Дети пишут" />
+                </picture>
+            </div>
+            <div id="g2">
+                <picture>
+                    <source srcset="../images/g2.jpg?as=avif&width=1440" type="image/avif" />
+                    <source srcset="../images/g2.jpg?as=webp&width=1440" type="image/webp" />
+                    <source srcset="../images/g2.jpg?as=jpeg&width=1440" type="image/jpeg" />
+                    <img src="../images/g2.jpg?width=1440" alt="Дети пишут" />
+                </picture>
+            </div>
+            <div id="g3">
+                <picture>
+                    <source srcset="../images/g3.jpg?as=avif&width=1440" type="image/avif" />
+                    <source srcset="../images/g3.jpg?as=webp&width=1440" type="image/webp" />
+                    <source srcset="../images/g3.jpg?as=jpeg&width=1440" type="image/jpeg" />
+                    <img src="../images/g3.jpg?width=1440" alt="Гордые мужики" />
+                </picture>
+            </div>
         </a>
         <div class="w-100 d-flex flex-wrap">
-            <a href="#g1" class="gallery-thumbnail" style="background-image: url('../images/gallery/g1-1x.jpg');"></a>
-            <a href="#g2" class="gallery-thumbnail" style="background-image: url('../images/gallery/g2-1x.jpg');"></a>
-            <a href="#g3" class="gallery-thumbnail" style="background-image: url('../images/gallery/g3-1x.jpg');"></a>
-            <a href="#g2" class="gallery-thumbnail" style="background-image: url('../images/gallery/g2-1x.jpg');"></a>
-            <a href="#g3" class="gallery-thumbnail" style="background-image: url('../images/gallery/g3-1x.jpg');"></a>
-            <a href="#g2" class="gallery-thumbnail" style="background-image: url('../images/gallery/g2-1x.jpg');"></a>
-            <a href="#g3" class="gallery-thumbnail" style="background-image: url('../images/gallery/g3-1x.jpg');"></a>
-            <a href="#g1" class="gallery-thumbnail" style="background-image: url('../images/gallery/g1-1x.jpg');"></a>
-            <a href="#g1" class="gallery-thumbnail" style="background-image: url('../images/gallery/g1-1x.jpg');"></a>
-            <a href="#g2" class="gallery-thumbnail" style="background-image: url('../images/gallery/g2-1x.jpg');"></a>
-            <a href="#g3" class="gallery-thumbnail" style="background-image: url('../images/gallery/g3-1x.jpg');"></a>
-            <a href="#g2" class="gallery-thumbnail" style="background-image: url('../images/gallery/g2-1x.jpg');"></a>
-            <a href="#g2" class="gallery-thumbnail" style="background-image: url('../images/gallery/g2-1x.jpg');"></a>
-            <a href="#g3" class="gallery-thumbnail" style="background-image: url('../images/gallery/g3-1x.jpg');"></a>
-            <a href="#g2" class="gallery-thumbnail" style="background-image: url('../images/gallery/g2-1x.jpg');"></a>
+            <a href="#g1" class="gallery__thumbnail" style="background-image: url('../images/g1.jpg?width=320');"></a>
+            <a href="#g2" class="gallery__thumbnail" style="background-image: url('../images/g2.jpg?width=320');"></a>
+            <a href="#g3" class="gallery__thumbnail" style="background-image: url('../images/g3.jpg?width=320');"></a>
+            <a href="#g2" class="gallery__thumbnail" style="background-image: url('../images/g2.jpg?width=320');"></a>
+            <a href="#g3" class="gallery__thumbnail" style="background-image: url('../images/g3.jpg?width=320');"></a>
+            <a href="#g2" class="gallery__thumbnail" style="background-image: url('../images/g2.jpg?width=320');"></a>
+            <a href="#g3" class="gallery__thumbnail" style="background-image: url('../images/g3.jpg?width=320');"></a>
+            <a href="#g1" class="gallery__thumbnail" style="background-image: url('../images/g1.jpg?width=320');"></a>
+            <a href="#g1" class="gallery__thumbnail" style="background-image: url('../images/g1.jpg?width=320');"></a>
+            <a href="#g2" class="gallery__thumbnail" style="background-image: url('../images/g2.jpg?width=320');"></a>
+            <a href="#g3" class="gallery__thumbnail" style="background-image: url('../images/g3.jpg?width=320');"></a>
+            <a href="#g2" class="gallery__thumbnail" style="background-image: url('../images/g2.jpg?width=320');"></a>
+            <a href="#g2" class="gallery__thumbnail" style="background-image: url('../images/g2.jpg?width=320');"></a>
+            <a href="#g3" class="gallery__thumbnail" style="background-image: url('../images/g3.jpg?width=320');"></a>
+            <a href="#g2" class="gallery__thumbnail" style="background-image: url('../images/g2.jpg?width=320');"></a>
         </div>
     </section>
     <section class="contacts text-white container-fluid">
         <h2 class="title text-center w-100">Контакты</h2>
         <div class="row">
             <div
-                class="col-12 col-md-8 contacts-address d-flex align-items-center flex-column justify-content-center p-3">
+                class="col-12 col-md-8 contacts__address d-flex align-items-center flex-column justify-content-center p-3">
                 <div>
-                    <p class="contacts-place">
+                    <p class="contacts__place">
                         г. Ростов-на-Дону, ул. Б. Садовая, 69
                     </p>
-                    <p class="contacts-organization">
+                    <p class="contacts__organization">
                         Ростовский государственный экономический университет (РИНХ)
                     </p>
-                    <p class="contacts-room">
+                    <p class="contacts__room">
                         Точка кипения РГЭУ (РИНХ)
                     </p>
                 </div>
             </div>
             <div
-                class="col-12 col-md-4 text-center contacts-remote d-flex align-items-center flex-column justify-content-center p-3">
-                <a href="tel:+7(863)345-40-40" class="contacts-phone">+7 (863) 345-40-40</a>
-                <a href="mailto:fnauka@bk.ru" class="contacts-mail">fnauka@bk.ru</a>
+                class="col-12 col-md-4 text-center contacts__remote d-flex align-items-center flex-column justify-content-center p-3">
+                <a href="tel:+7(863)345-40-40" class="contacts__phone">+7 (863) 345-40-40</a>
+                <a href="mailto:fnauka@bk.ru" class="contacts__mail">fnauka@bk.ru</a>
             </div>
         </div>
     </section>

@@ -17,7 +17,7 @@
     background-image: url("../images/background.svg")
 }
 
-.logo {
+.logo > img{
     width: 97px;
     height: 73px;
 }
