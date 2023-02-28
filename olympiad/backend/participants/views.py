@@ -13,4 +13,4 @@ class ParticipantsViewSet(viewsets.GenericViewSet,mixins.CreateModelMixin,):
             serializer = self.get_serializer(data=request.data)
             serializer.is_valid(raise_exception=True)
             serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response("Принято", status=status.HTTP_201_CREATED)
