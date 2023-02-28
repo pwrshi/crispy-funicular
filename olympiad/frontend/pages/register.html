@@ -25,12 +25,12 @@
             <h1 class="title mb-5">Регистрация участия</h1>
         </div>
         <div class="container">
-            <form action="" method="post" class="row">
+            <form action="http://localhost:2021/api/participants/" method="post" class="row">
                 <label for="fio" class="col-sm-12 col-md-3 my-3">ФИО</label>
                 <input placeholder="Иванов Иван Иванович" class="my-3 col-sm-12 col-md-9 textfield" type="text" name="fio"
                     id="fio">
                 <label for="institute" class="col-sm-12 col-md-3 my-3">Наименование учебного заведения</label>
-                <input placeholder="РГЭУ (РИНХ)" class="my-3 col-sm-12 col-md-9 textfield" type="text" name="institute"
+                <input placeholder="РГЭУ (РИНХ)" class="my-3 col-sm-12 col-md-9 textfield" type="text" name="institution"
                     id="institute">
                 <label for="phone" class="col-sm-12 col-md-3 my-3">Телефон</label>
                 <input placeholder="+7 (___) ___-__-__" class="my-3 col-sm-12 col-md-9 textfield" type="text" name="phone"
@@ -40,7 +40,7 @@
                     id="email">
                 <div class="d-flex justify-content-center">
                     <input type="submit" class="submit my-5 btn col-sm-12 col-lg-4 btn-primary btn-lg"
-                        title="Зарегистрироваться">
+                        value="Зарегистрироваться">
                 </div>
             </form>
         </div>
